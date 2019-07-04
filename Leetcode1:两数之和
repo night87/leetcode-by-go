@@ -1,0 +1,10 @@
+func twoSum(nums []int, target int) []int {
+    for firstIndex,firstNum:=range nums{
+        for sencendIndex,sencendNum:=range nums{
+            if firstIndex!=sencendIndex && firstNum + sencendNum == target{
+                return []int{firstIndex,sencendIndex}
+            }
+        }
+    }
+    return nil
+}
